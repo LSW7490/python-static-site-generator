@@ -5,7 +5,7 @@ from pathlib import Path
 
 class Parser:   
     
-    extensions : List[str]
+    extensions : List[str] = []
 
     def valid_extension(self, extension):
         return extension in self.extensions
@@ -31,5 +31,4 @@ class ResourceParser(Parser):
 
     def parse( path: Path, source: Path, dest: Path): 
         super().copy(path, source, dest)
-    
     
