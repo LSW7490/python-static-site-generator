@@ -10,8 +10,8 @@ def main(source="content", dest="dist"):
         "parsers": [
             ssg.parsers.ResourceParser(), 
             ssg.parsers.MarkdownParser(), 
-            ssg.parsers.ReStructuredTextParser()
-        ]
+            ssg.parsers.ReStructuredTextParser(),
+        ],
     }
     Site(**config).build()
 
